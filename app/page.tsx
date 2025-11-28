@@ -2,22 +2,11 @@ import Image from "next/image";
 
 const affiliates = [
   {
-    name: "FDJ",
-    image: "/fdj.jpg",
-    url: "https://www.enligne.parionssport.fdj.fr/inscription/?campaign=290725&parrain=D6304A28662A5244",
-    code: "N/A",
-    description: "Française des Jeux",
-    advantages: [
-      "30€ pour moi et jusqu'à 30€ pour le filleul",
-      "Paris sportifs en ligne",
-      "Plateforme sécurisée"
-    ]
-  },
-  {
     name: "Nickel",
     image: "/nickel.jpg",
     url: "https://nickel.eu",
     code: "12996443B09",
+    hasAffiliation: false,
     description: "Compte sans banque",
     advantages: [
       "L'affiliation est actuellement indisponible",
@@ -26,15 +15,16 @@ const affiliates = [
     ]
   },
   {
-    name: "Omada",
-    image: "/omada.jpg",
-    url: "https://join.omada.game/fr/friend/Z2FP9Z",
-    code: "Z2FP9Z",
-    description: "Paris sportifs sans argent réel",
+    name: "Spliiit",
+    image: "/spliiit.jpg",
+    url: "https://splii.it/1668232760",
+    code: "1668232760",
+    hasAffiliation: true,
+    description: "Partagez vos abonnements",
     advantages: [
-      "Jeux de pronostics gratuits",
-      "Gestion centralisée",
-      "Performance optimale"
+      "1€ offert à chacun",
+      "Partagez vos abonnements facilement",
+      "Paiements automatiques"
     ]
   },
   {
@@ -42,6 +32,7 @@ const affiliates = [
     image: "/pcloud.jpg",
     url: "https://partner.pcloud.com/r/151986",
     code: "N/A",
+    hasAffiliation: true,
     description: "Stockage Cloud Sécurisé",
     advantages: [
       "Je sais pas encore",
@@ -50,15 +41,42 @@ const affiliates = [
     ]
   },
   {
-    name: "Spliiit",
-    image: "/spliiit.jpg",
-    url: "https://splii.it/1668232760",
-    code: "1668232760",
-    description: "Partagez vos abonnements",
+    name: "XTB",
+    image: "/xtb.jpg",
+    url: "https://www.xtb.com",
+    code: "N/A",
+    hasAffiliation: false,
+    description: "Courtier en ligne",
     advantages: [
-      "1€ offert à chacun",
-      "Partagez vos abonnements facilement",
-      "Paiements automatiques"
+      "Je sais pas encore",
+      "Prochainement en 2026",
+      "Plateforme primée"
+    ]
+  },
+  {
+    name: "FDJ",
+    image: "/fdj.jpg",
+    url: "https://www.enligne.parionssport.fdj.fr/inscription/?campaign=290725&parrain=D6304A28662A5244",
+    code: "N/A",
+    hasAffiliation: true,
+    description: "Française des Jeux",
+    advantages: [
+      "30€ pour moi et jusqu'à 30€ pour le filleul",
+      "Paris sportifs en ligne",
+      "Plateforme sécurisée"
+    ]
+  },
+  {
+    name: "Omada",
+    image: "/omada.jpg",
+    url: "https://join.omada.game/fr/friend/Z2FP9Z",
+    code: "Z2FP9Z",
+    hasAffiliation: true,
+    description: "Paris sportifs sans argent réel",
+    advantages: [
+      "Je sais pas encore",
+      "Jeux de pronostics gratuits",
+      "Communauté active"
     ]
   }
 ];
@@ -121,24 +139,31 @@ export default function Home() {
                   ))}
                 </ul>
                 
-                {affiliate.code === "N/A" ? (
-                  <div className="inline-flex items-center gap-2 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 px-3 py-1.5 rounded-full text-sm font-medium">
+{!affiliate.hasAffiliation && (
+                  <div className="inline-flex items-center gap-2 bg-slate-50 dark:bg-slate-900/30 text-slate-600 dark:text-slate-400 px-3 py-1.5 rounded-full text-sm font-medium">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                    </svg>
+                    <span>Site web</span>
+                  </div>
+                )}
+                {affiliate.hasAffiliation && affiliate.code === "N/A" && (
+                  <div className="inline-flex items-center gap-2 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 px-3 py-1.5 rounded-full text-sm font-medium">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                     </svg>
                     <span>Lien d&apos;affiliation</span>
                   </div>
-                ) : (
-                  <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1.5 rounded-full text-sm font-medium">
-                    <span className="font-mono">{affiliate.code}</span>
+                )}
+                {affiliate.hasAffiliation && affiliate.code !== "N/A" && (
+                  <div className="inline-flex items-center gap-2 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 px-3 py-1.5 rounded-full text-sm font-medium">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
+                    <span className="font-mono">{affiliate.code}</span>
                   </div>
                 )}
-              </div>
-
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+              </div>              <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
             </a>
           ))}
         </div>
