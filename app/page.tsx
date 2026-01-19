@@ -78,6 +78,19 @@ const affiliates = [
       "Jeux de pronostics gratuits",
       "Communauté active"
     ]
+  },
+  {
+    name: "Remedeus",
+    image: "/weed.jpg",
+    url: "https://www.remedeus.com",
+    code: "N/A",
+    hasAffiliation: false,
+    description: "Weed et bien-être",
+    advantages: [
+      "Disponible en pharmacies",
+      "Sommeil et relaxation",
+      "Spectre large"
+    ]
   }
 ];
 
@@ -88,10 +101,10 @@ export default function Home() {
         {/* Header Section */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-5xl sm:text-6xl font-bold bg-linear-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent mb-4">
-            Notre choix d&apos;affiliation
+            Notre choix d&apos;affiliation et de partenaires
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Des partenaires de confiance qui nous aident à offrir une valeur exceptionnelle
+            Des sites de confiance qui nous aident à offrir une valeur exceptionnelle
           </p>
         </div>
 
