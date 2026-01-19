@@ -85,11 +85,24 @@ const affiliates = [
     url: "https://www.remedeus.com",
     code: "N/A",
     hasAffiliation: false,
-    description: "Weed et bien-être",
+    description: "Salade et bien-être",
     advantages: [
       "Disponible en pharmacies",
       "Sommeil et relaxation",
       "Spectre large"
+    ]
+  },
+  {
+    name: "Instant Gaming",
+    image: "/instant-gaming.jpg",
+    url: "https://www.instant-gaming.com/fr/?igr=gfngames",
+    code: "gfngames",
+    hasAffiliation: true,
+    description: "Jeux vidéo à prix réduit",
+    advantages: [
+      "Réductions exclusives",
+      "Large catalogue de jeux",
+      "Livraison instantanée"
     ]
   }
 ];
