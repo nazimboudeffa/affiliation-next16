@@ -81,7 +81,7 @@ const affiliates = [
   },
   {
     name: "Remedeus",
-    image: "/weed.jpg",
+    image: "/salad.jpg",
     url: "https://www.remedeus.com",
     code: "N/A",
     hasAffiliation: false,
