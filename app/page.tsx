@@ -6,12 +6,12 @@ const affiliates = [
     image: "/nickel.jpg",
     url: "https://nickel.eu",
     code: "12996443B09",
-    hasAffiliation: false,
+    hasAffiliation: true,
     description: "Compte sans banque",
     advantages: [
-      "L'affiliation est actuellement indisponible",
       "Ouverture en 5 minutes",
-      "Sans conditions de revenus"
+      "Sans conditions de revenus",
+      "Google Pay"
     ]
   },
   {
