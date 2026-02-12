@@ -7,7 +7,7 @@ const affiliates = [
     url: "https://nickel.eu",
     code: "12996443B09",
     hasAffiliation: true,
-    description: "Compte sans banque",
+    description: "Du 09/02/26 au 02/03/26",
     advantages: [
       "Ouverture en 5 minutes",
       "Sans conditions de revenus",
