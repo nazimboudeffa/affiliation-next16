@@ -104,6 +104,19 @@ const affiliates = [
       "Large catalogue de jeux",
       "Livraison instantanée"
     ]
+  },
+  {
+    name: "WOSB",
+    image: "/wosb.jpg",
+    url: "https://worldofseabattle.com?f=ref_300836173",
+    code: "300836173",
+    hasAffiliation: true,
+    description: "World of Sea Battle",
+    advantages: [
+      "Jeu de stratégie en ligne",
+      "Pirates et batailles navales",
+      "Communauté internationale"
+    ]
   }
 ];
 
