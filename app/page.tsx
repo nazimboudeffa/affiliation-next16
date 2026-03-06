@@ -106,7 +106,7 @@ const affiliates = [
     ]
   },
   {
-    name: "WOSB",
+    name: "WoSB",
     image: "/wosb.jpg",
     url: "https://worldofseabattle.com?f=ref_300836173",
     code: "300836173",
