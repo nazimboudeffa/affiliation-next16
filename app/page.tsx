@@ -119,6 +119,19 @@ const affiliates = [
     ]
   },
   {
+    name: "TapNOW AI",
+    image: "/tapnow.jpg",
+    url: "https://www.tapnow.ai/referral/tU11uGcc",
+    code: "tU11uGcc",
+    hasAffiliation: true,
+    description: "TapNOW AI",
+    advantages: [
+      "Création de contenu assistée par IA",
+      "Interface conviviale",
+      "Communauté de créateurs"
+    ]
+  },
+  {
     name: "Meshy AI",
     image: "/meshy.jpg",
     url: "https://www.meshy.ai/?utm_source=meshy&utm_medium=referral-program&utm_content=7QNUAZ&share_type=invite-friends",
