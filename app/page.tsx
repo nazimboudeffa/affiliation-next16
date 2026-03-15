@@ -117,6 +117,19 @@ const affiliates = [
       "Pirates et batailles navales",
       "Communauté internationale"
     ]
+  },
+  {
+    name: "Meshy AI",
+    image: "/meshy.png",
+    url: "https://www.meshy.ai/?utm_source=meshy&utm_medium=referral-program&utm_content=7QNUAZ&share_type=invite-friends",
+    code: "7QNUAZ",
+    hasAffiliation: true,
+    description: "Meshy AI",
+    advantages: [
+      "Modélisation 3D assistée par IA",
+      "Interface intuitive",
+      "Communauté de créateurs"
+    ]
   }
 ];
 
