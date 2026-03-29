@@ -54,12 +54,12 @@ const affiliates = [
     ]
   },
   {
-    name: "FDJ",
-    image: "/fdj.jpg",
-    url: "https://www.enligne.parionssport.fdj.fr/inscription/?campaign=290725&parrain=D6304A28662A5244",
+    name: "Unibet",
+    image: "/unibet.jpg",
+    url: "https://www.unibet.fr/inscription/?campaign=240326&parrain=D6304A28662A5244",
     code: "N/A",
     hasAffiliation: true,
-    description: "Française des Jeux",
+    description: "Française des Jeux ??",
     advantages: [
       "30€ pour moi et jusqu'à 30€ pour le filleul",
       "Paris sportifs en ligne",
