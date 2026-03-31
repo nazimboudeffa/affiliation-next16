@@ -85,7 +85,7 @@ const affiliates = [
     url: "https://www.remedeus.com",
     code: "N/A",
     hasAffiliation: false,
-    description: "Salade et bien-être",
+    description: "CBD et produits naturels",
     advantages: [
       "Disponible en pharmacies",
       "Sommeil et relaxation",
