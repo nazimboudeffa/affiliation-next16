@@ -14,6 +14,7 @@ const affiliates = [
       "Google Pay"
     ]
   },
+  /*
   {
     name: "Spliiit",
     image: "/spliiit.jpg",
@@ -27,6 +28,7 @@ const affiliates = [
       "Paiements automatiques"
     ]
   },
+  */
   {
     name: "pCloud",
     image: "/pcloud.jpg",
@@ -79,6 +81,7 @@ const affiliates = [
       "Communauté active"
     ]
   },
+  /*
   {
     name: "Remedeus",
     image: "/salad.jpg",
@@ -92,6 +95,7 @@ const affiliates = [
       "Spectre large"
     ]
   },
+  */
   {
     name: "Instant Gaming",
     image: "/instant-gaming.jpg",
