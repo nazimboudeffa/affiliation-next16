@@ -100,7 +100,7 @@ const affiliates = [
     name: "Instant Gaming",
     image: "/instant-gaming.jpg",
     url: "https://www.instant-gaming.com/fr/?igr=cloudiste",
-    code: "cloudist",
+    code: "cloudiste",
     hasAffiliation: true,
     description: "Jeux vidéo à prix réduit",
     advantages: [
